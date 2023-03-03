@@ -1,0 +1,604 @@
+@charset "UTF-8";
+@import url(global.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap");
+@font-face {
+  font-family: '微軟正黑體', Arial, sans-serif;
+  font-size: 14px;
+}
+
+h2, .menu_box_book, .navbar-light:hover .navbar-nav:hover .nav-link:hover, .room_rectangle_btn_book, .room_rectangle_btn_book:hover, .card_list_info, .card_list_info:hover {
+  color: #a69a00;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.container {
+  width: 90%;
+  position: relative;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+  width: 21rem;
+  margin: 3rem auto;
+  border-bottom: 2px solid;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  background-color: #fff;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  padding: .8rem 2rem;
+  position: inherit;
+  z-index: 9999;
+  border-bottom: 5px solid #a69a00;
+}
+
+.menu_logo {
+  display: block;
+  width: 11rem;
+  height: 2.5rem;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-indent: -9999rem;
+}
+
+.menu_box {
+  display: block;
+  float: right;
+}
+
+.menu_box_book {
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+  border: 2px solid #a69a00;
+  border-radius: 1rem;
+  position: absolute;
+  right: 18rem;
+}
+
+.menu_box_book:hover {
+  color: #fff;
+  background: #a69a00;
+}
+
+.menu_box_list_ul_btn {
+  font-weight: 400;
+}
+
+.menu_box_list_ul_btn_book {
+  display: none;
+}
+
+.banner {
+  min-width: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner_fix {
+  background-image: url("../images/aboutBg.jpg");
+  background-position: top center;
+  height: 1100px;
+  background-attachment: inherit;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.banner_text {
+  width: 50%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+}
+
+.banner_img {
+  height: 300px;
+  background-image: url("../images/banner.jpg");
+}
+
+.mouse {
+  width: 25px;
+  height: 45px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -12.5px;
+  border-radius: 12px;
+}
+
+.mouse::before {
+  content: "崧湯精品汽車旅館";
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: .8rem;
+  top: -1.5rem;
+  left: -250%;
+  width: 7rem;
+}
+
+.mouse:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+  left: 50%;
+  margin-left: -2.5px;
+  top: 10px;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% {
+    -webkit-transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(7px);
+  }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+  }
+}
+
+.room {
+  margin-bottom: 6rem;
+}
+
+.room_box {
+  z-index: 11;
+  width: 75%;
+}
+
+.room_box_wrap {
+  overflow: inherit;
+}
+
+.room_box_text {
+  position: absolute;
+  left: 104%;
+  top: 1rem;
+  text-align: left;
+  width: 13rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  height: 50%;
+}
+
+.room_rectangle {
+  width: 90%;
+  height: 100%;
+  z-index: 10;
+  background: #a69a00;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.room_rectangle_btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  width: 23%;
+  line-height: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.room_rectangle_btn_info, .room_rectangle_btn_book {
+  border-radius: 3px;
+  margin-top: .6rem;
+  z-index: 15;
+}
+
+.room_rectangle_btn_info {
+  color: #fff;
+  border: 1px solid #fff;
+  text-shadow: 1px 1px 2px #4f5818;
+}
+
+.room_rectangle_btn_info:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.room_rectangle_btn_book {
+  background: #fff;
+}
+
+.room_rectangle_btn_book:hover {
+  text-decoration: underline;
+}
+
+.info {
+  display: block;
+  width: 100%;
+}
+
+.info_map {
+  position: relative;
+  padding-bottom: 60%;
+  /* 此為地圖長寬比 */
+  height: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+}
+
+.info_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.info_add {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.aboutPhoto {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cardBox {
+  width: 100%;
+}
+
+.card_room {
+  margin: 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 31.2%;
+  margin: 0 5px 3rem 5px;
+}
+
+.card_room:last-of-type {
+  text-align: left;
+}
+
+.card_room_title {
+  border-left: 5px solid #a69a00;
+  padding-left: 1rem;
+  color: black;
+}
+
+.card_room_title:hover {
+  color: black;
+}
+
+.card_room_section {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.card_room_section_list {
+  width: 100%;
+  border-bottom: 1px solid #a69a00;
+}
+
+.card_room_section_list_tab {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #a69a00;
+  color: #fff;
+  text-align: center;
+  line-height: 2.6rem;
+  width: 8rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card_room_section_text {
+  margin-left: 1rem;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  background-color: #fff;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 0;
+}
+
+.card_list {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 3rem auto;
+  font-size: 1rem;
+}
+
+.card_list_box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_list_info, .card_list_book {
+  width: 50%;
+  margin: .5rem .5rem;
+  border-radius: 5px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.card_list_info {
+  background: #eaeaea;
+  border: 1px solid #a69a00;
+}
+
+.card_list_info:hover {
+  text-decoration: underline;
+}
+
+.card_list_book {
+  color: #fff;
+  background-color: #a69a00;
+  text-shadow: 1px 1px 2px #4f5818;
+}
+
+.card_list_book:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.card_list_quick {
+  width: 60%;
+}
+
+.footer {
+  background-color: #a69a00;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-top: 4rem;
+  border-top: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.footer_list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer_list_logo {
+  background-image: url(../images/logo_footer.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  height: 4rem;
+  width: 10rem;
+}
+
+.footer_list_info {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: .7rem;
+  line-height: 1.5rem;
+}
+
+.goTop {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  font-size: .8rem;
+  line-height: 30px;
+  right: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  bottom: 2.5rem;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #a69a00;
+  text-shadow: 1px 0 2px #4f5818;
+}
+
+.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+@media (max-width: 990px) {
+  .menu_box_book {
+    right: 6rem;
+    top: 1rem;
+  }
+  .menu_box_list_ul_btn {
+    margin-top: .5rem;
+  }
+  .mouse {
+    display: none;
+  }
+  .banner_fix {
+    height: 1300px;
+    width: 70%;
+  }
+  .card_room {
+    width: 47.9%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_fix {
+    height: 960px;
+    padding-left: 0;
+  }
+  .banner_text {
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 0;
+  }
+  .room {
+    display: block;
+  }
+  .room_box {
+    width: 100%;
+  }
+  .room_box_text {
+    top: 105%;
+    left: 1rem;
+  }
+  .room_rectangle {
+    position: relative;
+    height: 16rem;
+    width: 100%;
+  }
+  .room_rectangle_btn {
+    right: 0;
+    padding: 0 4rem;
+    width: 100%;
+  }
+  .aboutPhoto {
+    width: 100%;
+  }
+  p {
+    line-height: 2.5rem;
+  }
+  .info_add {
+    line-height: 2.5rem;
+  }
+  .card_room {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card_list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card_list_info, .card_list_book {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .banner_fix {
+    height: 680px;
+  }
+  .banner_text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .footer_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_list_logo {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: .5rem .8rem;
+  }
+  .menu_box_book {
+    right: 5.5rem;
+    top: 1.2rem;
+    font-size: .9rem;
+    padding: .3rem .5rem;
+    margin-right: .2rem;
+  }
+  .banner_fix {
+    height: 800px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
