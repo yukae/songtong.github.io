@@ -1,0 +1,109 @@
+<html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="崧湯汽車旅館,崧湯,台中住宿,台中汽車旅館,台中旅店,台中飯店,台中旅遊,台中火車站">
+    <meta name="keywords" content="崧湯汽車旅館,崧湯,台中住宿,台中汽車旅館,台中旅店,台中飯店,台中旅遊,台中火車站">
+    <title>崧湯汽車旅館</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <script src="./js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+    <!-- 選單 -->
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+        <a class="menu_logo navbar-brand" href="./index.html">崧湯汽車旅館</a>
+        <a class="menu_box_book" href="#">立即訂房</a>    
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="menu_box container-fluid">
+            <div class="menu_box_list collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="menu_box_list_ul navbar-nav">
+                    <li class="menu_box_list_ul_btn nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">關於崧湯</a>
+                    </li>
+                    <li class="menu_box_list_ul_btn nav-item">
+                        <a class="nav-link" href="./room.html">客房介紹</a>
+                    </li>
+                    <li class="menu_box_list_ul_btn nav-item">
+                        <a class="nav-link" href="#">交通位置</a>
+                    </li>
+                    <li class="menu_box_list_ul_btn menu_box_list_ul_btn_book nav-item">
+                        <a class="nav-link" href="#">立即訂房</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="banner banner_img img-fluid" alt="崧湯汽車旅館"></div>
+
+    <h2 class="title">交通資訊</h2>
+
+    <div class="info">
+        <div class="info_map">
+            <iframe width="400" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=台中市北屯區崇德六路216號&z=16&output=embed&t=></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_list">
+            <div class="footer_list_logo"></div>
+            <p class="footer_list_info fw-bolder">
+                地址：台中市北屯區崇德六路216號<br>
+                電話：04-3602-8889<br>
+                Email：songton15@gmail.com<br>
+                周邊景點：逢甲商圈夜市｜一中商圈夜市｜洲際棒球場｜好市多購物商場<br>
+            </p>
+        </div>
+
+        <div class="footer_text">
+            Copyright © 2021 崧湯汽車旅館. All Rights Reserved.
+        </div>
+    </div>
+
+    <div class="goTop">▲</div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.esm.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+
+        $(function () {
+
+            $(document).on('scroll', function () {
+
+                if ($(window).scrollTop() > 750) {
+                    $('.goTop').addClass('show');
+                } else {
+                    $('.goTop').removeClass('show');
+                }
+            });
+
+            $('.goTop').on('click', scrollToTop);
+        });
+
+        function scrollToTop() {
+            verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({ scrollTop: offsetTop }, 500, 'linear');
+        }
+
+    });
+    </script>
+
+</body>
+</html>
